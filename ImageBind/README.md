@@ -40,7 +40,7 @@ Emergent zero-shot classification performance.
 
 ```shell
 docker build -t <image_name>:<tag> .
-docker run -d --name <container_name> -p <host_port>:<container_port> <image_name>:<tag>
+docker run -p 7860:7860 <image_name>:<tag>
 ```
 
 For windows users, you might need to install `soundfile` for reading/writing audio files.
