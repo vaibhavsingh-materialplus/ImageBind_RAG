@@ -38,17 +38,12 @@ Emergent zero-shot classification performance.
 
 ## Usage
 
-Install pytorch 1.13+ and other 3rd party dependencies.
-
 ```shell
-conda create --name imagebind python=3.10 -y
-conda activate imagebind
-
-pip install .
+docker build -t <image_name>:<tag> .
+docker run -d --name <container_name> -p <host_port>:<container_port> <image_name>:<tag>
 ```
 
-For windows users, you might need to install `soundfile` for reading/writing audio files. (Thanks @congyue1977)
-
+For windows users, you might need to install `soundfile` for reading/writing audio files.
 ```
 pip install soundfile
 ```
